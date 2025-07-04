@@ -15,7 +15,7 @@ The system enables:
 ## Technologies & Components
 
 ### Hardware
-- **Arduino Uno ** (collects sensor data and controls actuators)
+- **Arduino Uno** (collects sensor data and controls actuators)
 - **Raspberry Pi 4** (central controller + sends sensor data to orion context broker and receives commands from web app and send them back to arduino )
 - **NRF24L01** wireless modules (Arduino ↔ Raspberry Pi)
 - **Sensors**: 
