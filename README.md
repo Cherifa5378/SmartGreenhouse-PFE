@@ -49,13 +49,9 @@ The system enables:
 6. A second server gets notified every time an atribute (for actuator) changes its value
 7. Commands are relayed back to Arduino to control actuators
 
-## Screenshots
-
 ## How to Run
 ### Option 1: Manual Deployment
 1. Upload Arduino code on Aduino IDE
 2. Run `combined.py` on your Raspberry Pi on Thonny 
-3. Start docker-compose.yml file 
-
-##  Repository Structure
+3. Start docker-compose.yml file (Docker Desktop recommended)
 
