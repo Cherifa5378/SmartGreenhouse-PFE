@@ -37,6 +37,25 @@ The system enables:
 - FIWARE stack: Orion Context Broker, MongoDB
 - Docker (for containerized services)
 - JavaScript + HTML + CSS + Bootstrap  (for web interface)
+  
 
-## 📂 Repository Structure
+##  How It Works
+
+1. Sensors send data from Arduino to Raspberry Pi via NRF24L01
+2. Raspberry Pi receives, formats, and forwards data to Orion (NGSI-LD)
+3. An http server gets notified every time an atribute (for sensor) changes its value and store the history of all sensors values in mongodb in a collection
+4. A web dashboard displays live data using Chart.js
+5. Commands (e.g., `FAN:ON`) sent from Orion via PATCH
+6. A second server gets notified every time an atribute (for actuator) changes its value
+7. Commands are relayed back to Arduino to control actuators
+
+## Screenshots
+
+## How to Run
+### Option 1: Manual Deployment
+1. Upload Arduino code on Aduino IDE
+2. Run `combined.py` on your Raspberry Pi on Thonny 
+3. Start docker-compose.yml file 
+
+##  Repository Structure
 
